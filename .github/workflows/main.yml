@@ -35,6 +35,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - name: Setup reviewdog
-        uses: reviewdog/action-setup@v1.0.3
+      - uses: reviewdog/action-setup@v1
+      - run: reviewdog -version
 
